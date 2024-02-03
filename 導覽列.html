@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>你的網頁標題</title>
+    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url(back/夕陽.jpg); /* Replace with your background image URL */
+        background-size: 100%;
+        font-family: 'Arial', sans-serif;
+        z-index: -1;
+      } 
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $("nav").load("navbar.html"); 
+      });
+    </script>
+  </head>
+  <body>
+    <nav></nav>
+    <!-- 你的其他HTML代碼 -->
+  </body>
+</html>

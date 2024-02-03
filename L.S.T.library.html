@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L.S.T. Library Of Funtion</title>
+
+    <link rel="icon" href="AAA\.ico.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+
+      #background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      #content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        z-index: 1; /* Ensure content is above the background */
+      }
+
+      #content img {
+        width: 325px;
+        height: auto;
+      }
+
+      #content h2 {
+        margin-top: 30px;
+        font-size: 55px;
+        font-weight: bold;
+        font-family: "Brush Script MT", cursive;
+        letter-spacing: 3px;
+      }
+
+      #content h3 {
+        font-size: 22px;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      #background-section {
+        height: 100vh; /* Adjust height based on your requirements */
+        background-image: url(辦公室.jpg); /* Add the path to your background image */
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1; /* Set a higher z-index to make it appear above #background-video */
+      }
+
+      .center-container {
+        text-align: center;
+        color: white; /* Set the text color as needed */
+      }
+
+      .image-grid {
+        display: flex;
+      }
+
+      .top-images,
+      .bottom-images {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .top-images img,
+      .bottom-images img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
+
+      .text-content {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .content {
+        padding: 20px;
+        z-index: -1;
+      }
+
+      #background-section {
+        text-align: center;
+      }
+
+      .center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-grid {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* Adjust as needed for spacing */
+      }
+
+      .top-images,
+      .bottom-images {
+        display: flex;
+        justify-content: center;
+        margin: 5px; /* Adjust as needed for spacing */
+        width: 150px;
+      }
+
+      .top-images img:nth-child(2) {
+        transform: scale(0.7); /* 调整缩放比例，可以根据需要修改 */
+      }
+
+      .top-images img:nth-child(3) {
+        transform: scale(0.85); /* 调整缩放比例，可以根据需要修改 */
+      }
+
+      .bottom-images img:nth-child(3) {
+        transform: scale(0.9); /* 调整缩放比例，可以根据需要修改 */
+      }
+
+      .bottom-images img:nth-child(4) {
+        transform: scale(0.7); /* 调整缩放比例，可以根据需要修改 */
+      }
+  
+      .top-images img:hover,
+      .bottom-images img:hover {
+        transform: scale(1); /* 鼠标悬停时缩放为原来的1.2倍大小，可以根据需要修改 */
+      }
+
+      .top-images img,
+      .bottom-images img {
+        transition: transform 0.3s cubic-bezier(0.47, 0, 0.745, 0.715); /* 添加缩放的过渡效果，可以调整 cubic-bezier 函数的参数来调整过渡效果 */
+        margin: 0px; /* Adjust as needed for spacing */
+        border-radius: 15px; /* 添加圆角 */
+      }
+
+      .text-content {  
+
+        text-align: left;
+        margin-top: 0px; /* Adjust as needed for spacing */
+        font-family: 'Montserrat', sans-serif;
+      }
+      h4 {
+        font-family: 'Lora', serif;
+        margin-top: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Lora", serif;
+        padding: 30px;
+
+      }
+      
+      .text-content h1 {
+        background-color: rgba(231, 181, 123, 0.7);
+        padding: 10px;
+        border-top-right-radius:4.5% 45%; /* 將圓弧效果添加到 h1 元素 */
+      }
+      
+    </style>
+
+<div id="background-section">
+  <div class="center-container">
+    <div class="image-grid">
+      <div class="top-images">
+        <img src="image1.jpg" alt="Image 1" />
+        <img src="image2.jpg" alt="Image 2" />
+      </div>
+      <div class="bottom-images">
+        <img src="AAA\作者 (3).jpg" alt="Image 4" />
+        <img src="AAA\作者 (4).jpg" alt="Image 5" />
+      </div>
+      <div class="bottom-images">
+        <img src="AAA\作者 (5).jpg" alt="Image 4" />
+        <img src="AAA\作者(6).webp" alt="Image 5" />
+      </div>
+    </div>
+
+    <div class="text-content">
+      <h1>Webpage Introduction</h1>
+      <p>
+        This is a description of your webpage. You can provide information,
+        details, or any content you want to showcase here.
+      </p>
+    </div>
+  </div>
+</div>
+    </style>
+  </head>
+  <body>
+    <nav class="custom-nav">
+      <div class="logo-container">
+        <img src="AAA/名字.png" height="50px" width="auto" alt="Company Logo" />
+        <h1 class="company-name">L.S.T. Library Of Fiction</h1>
+      </div>
+
+      <div class="links">
+        <a href="L.S.T.library.html">首頁</a>
+        <a href="新品推薦.html">新品推薦</a>
+        <a href="出品作品.html">出品書籍</a>
+        <a href="主要劇情.html">主要劇情</a>
+        <a href="次要劇情.html">次要劇情</a>
+        <a href="詩文總集.html">詩文總集</a>
+        <a href="作者簡介.html">作者簡介</a>
+
+        <video id="background-video" autoplay muted loop>
+          <source src="AAA\影片背景.mp4" type="video/mp4" />
+          <!-- Add the path to your background video -->
+          Your browser does not support the video tag.
+        </video>
+
+        <div id="content">
+          <img src="AAA/林LOGO.png" alt="圖片描述" />
+          <h2>Souls fly and roam the continent of Ra</h2>
+          <h3>L.S.T. Library Of Function</h3>
+        </div>
+      </div>
+    </nav>
+
+    <div id="background-section">
+      <div class="center-container">
+        <div class="image-grid">
+          <div class="top-images">
+            <img src="AAA\作者 (1).jpg" alt="Image 1" />
+            <img src="AAA\作者 (1).png" alt="Image 2" />
+            <img src="AAA\作者 (2).jpg" alt="Image 2" />
+            <img src="AAA\作者 (6).jpg" alt="Image 4" />
+          </div>
+          <div class="bottom-images">
+            <img src="AAA\作者(6).webp" alt="Image 4" />            
+            <img src="AAA\作者 (3).jpg" alt="Image 2" />
+            <img src="AAA\作者 (5).jpg" alt="Image 4" />
+            <img src="AAA\作者 (4).jpg" alt="Image 3" />
+          </div>
+        <div class="text-content">
+          
+          <h1>Webpage Introduction</h1>
+          <h4>
+            歡迎蒞臨L.S.T. Library Of Function！<br>
+            在這裡，我將我的心靈之旅化為文字，帶你進入一個充滿奇幻與冒險的世界。<br><br>
+            網站導覽：<br><br>
+            首頁：
+            此處是我小說世界的大門，讓你沉浸在無盡的故事之海。
+            <br><br>
+            新品推薦：這裡呈現最新力作，敬請期待每一本書籍背後的故事。
+            <br><br>
+            出品書籍：深入探索我過去的創作，每本書都是一趟心靈的旅程。
+            <br><br>
+            主要劇情：            
+            發現每部作品的核心劇情，與角色一同經歷成長與挑戰。
+            <br><br>
+            次要劇情：探索織線交錯的次要劇情，發現故事中不為人知的層次。
+            <br><br>
+            詩文總集：感受文字的魔力，閱讀我深藏其中的詩歌與散文，品味其中的美與哲思。
+            <br><br>
+            作者簡介：與我一同走近幕後，了解我對於創作的熱愛與堅持。
+            <br><br>
+            感謝您蒞臨，我期待與您分享這場夢幻之旅。<br>讓我們攜手飛向無垠的故事星空，一同描繪屬於我們的奇幻篇章。
+          </h4>
+        </div>
+      </div>
+    </div>
+    <script>
+        let isScrolling = false;
+        let startTime;
+        let startTop;
+        let scrollDirection;
+      
+        function scrollHandler(timestamp) {
+          if (!startTime) {
+            startTime = timestamp;
+          }
+          // 800是自動滑動的速度
+          const progress = Math.min(1, (timestamp - startTime) / 800);  
+          const easeInOutQuad = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+      
+          window.scrollTo(0, startTop + scrollDirection * easeInOutQuad(progress) * window.innerHeight);
+      
+          if (progress < 1) {
+            requestAnimationFrame(scrollHandler);
+          } else {
+            isScrolling = false;
+          }
+        }
+      
+        function wheelHandler(event) {
+          event.preventDefault();
+      
+          if (!isScrolling) {
+            isScrolling = true;
+            startTime = null;
+      
+            scrollDirection = Math.sign(event.deltaY); // 获取滚动方向
+      
+            startTop = window.pageYOffset;
+      
+            requestAnimationFrame(scrollHandler);
+          }
+        }
+      
+        document.addEventListener('wheel', wheelHandler);
+      </script>
+      
+    </body>
+  </html>
+  

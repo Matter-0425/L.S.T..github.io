@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="詩集" content="width=device-width, initial-scale=1.0">
+    <title>L.S.T. Library 詩集</title> 
+
+    <link rel="icon" href="AAA\icom.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="AAA\icom.ico" type="image/x-icon" />
+
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(back/詩集.jpg); /* Replace with your background image URL */
+            background-size: 100%;
+            font-family: 'Arial', sans-serif;
+        }    
+
+        img {
+            border-radius: 15px; /* Adjust the radius as needed */
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* 100% of the viewport height */
+            margin-top: -30px; /* Adjust the value as needed to lift it higher */
+        }
+
+        .image-container img {
+            width: 400px;
+            transition: transform 0.5s ease; /* Smooth transition for image scaling */
+            cursor: pointer;
+            margin: 50px; /* Add margin to create space between images */
+        }
+
+        .image-container img:hover {
+            transform: scale(1.15); /* Scale up to 115% on hover */
+        }
+
+        .image-container a {
+            text-align: center;
+            text-decoration: none;
+            color: white; /* Change the text color as needed */
+            display: block;
+        }
+
+        .image-container h2 {
+            margin: 10px 0 0; /* Add margin to create space between image and text */
+        }
+
+        
+
+
+
+        .content-container {
+            background-color: white;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* 水平居中 */
+            flex-direction: column; /* 垂直排列 */
+            margin-top: 10px; /* Adjust the value as needed to lift it higher */
+        }
+
+
+        .book-group {
+            display: flex;
+            margin-bottom: 60px; /* 設定組之間的間距，可根據需要調整 */
+        }
+
+        .book-group img {
+            width: 350px; /* 設定圖片寬度，可根據需要調整 */
+            margin-right: 150px; /* 設定圖片和文字之間的間距，可根據需要調整 */
+        }
+
+        .book-description {
+            flex: 1; /* Take up remaining space */
+            max-width: 400px; /* 設定文字區域最大寬度，可根據需要調整 */
+        }
+        
+        h4 {
+            font-size: 40px;
+        }
+
+        /* Your existing CSS goes here */
+
+        .book-group {
+            display: flex;
+            flex-direction: row; /* Default direction */
+            /* Other styles */
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+          <img src="AAA/名字.png" height="50px" width="auto" alt="Company Logo">
+          <h1 class="company-name">L.S.T. Library Of Fiction</h1>
+        </div>
+        
+        <div class="links">
+          <a href="L.S.T.library.html">首頁</a>
+          <a href="新品推薦.html">新品推薦</a>
+          <a href="出品作品.html">出品書籍</a>
+          <a href="主要劇情.html">主要劇情</a>
+          <a href="次要劇情.html">次要劇情</a>
+          <a href="詩文總集.html">詩文總集</a>
+          <a href="作者簡介.html">作者簡介</a>
+        </div>
+    </nav>
+
+<div class="image-container">
+
+    <a href="#"> <!-- Replace with your image link destination -->
+        <img src="封面\夏夜.jpg" alt="Image0">
+        <h2>夏夜液談</h2>
+
+    <a href="#"> <!-- Replace with your image link destination -->
+        <img src="封面/空樓.jpg" alt="Image1">
+        <h2>空樓寒夜</h2>
+    </a>
+   
+</div>
+
+<hr>
+<hr>
+<hr>
+<hr>
+
+<div class="content-container">
+    <h4>✕書籍介紹✕</h4>    
+    <div class="book-group">
+        <img src="封面\夏夜.jpg" alt="封面\夏夜.jpg">
+        <div class="book-description">
+            <br><h1>夏夜液談</h1><p><sup>《大森林淋》以外</sup></p>
+            <h3></h3>
+            </div>
+    </div>
+
+    <div class="book-group">
+        <img src="封面/空樓.jpg" alt="封面/空樓.jpg">
+        <div class="book-description">
+            <br><h1>空樓寒夜</h1><p><sup>《液遊略記》以外</sup></p>
+            <h3></h3>
+            <!-- 書的大綱介紹文字 -->
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

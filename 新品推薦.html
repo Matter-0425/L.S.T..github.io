@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="新品推薦.html" content="width=device-width, initial-scale=1.0">
+    <title>L.S.T. Library 新品推薦</title>
+
+    <link rel="icon" href="AAA\icom.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="AAA\icom.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <style>
+            
+        body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            background-image: url(back/海邊.jpg); 
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+                img {
+            border-radius: 15px; /* Adjust the radius as needed */
+        }
+        .image {
+            text-align: center;
+            margin: 10px;
+            flex: 0 1 calc(33.33% - 20px); /* Adjust the width for different screen sizes */
+        }
+
+        .image-container img {
+            transition: transform 0.5s ease; /* Smooth transition for image scaling */
+            cursor: pointer;
+            margin: 25px; /* Add margin to create space between images */
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1); /* Scale up to 120% on hover */
+        }
+
+        .image a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            text-decoration: none; /* 移除文字下劃線 */
+        }
+
+        .image img {
+            width: 70%;
+            cursor: pointer;
+        }
+
+        .image p {
+            margin-top: 10px; /* 調整文字和圖片的上邊距 */
+            max-width: 350px; /* 設定文字區域最大寬度 */
+            word-wrap: break-word; /* 當文字內容超過一定字數時換行 */
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+          <img src="AAA/名字.png" height="50px" width="auto" alt="Company Logo">
+          <h1 class="company-name">L.S.T. Library Of Fiction</h1>
+        </div>
+        
+        <div class="links">
+          <a href="L.S.T.library.html">首頁</a>
+          <a href="新品推薦.html">新品推薦</a>
+          <a href="出品作品.html">出品作品</a>
+          <a href="主要劇情.html">主要劇情</a>
+          <a href="次要劇情.html">次要劇情</a>
+          <a href="詩文總集.html">詩文總集</a>
+          <a href="作者簡介.html">作者簡介</a>
+        </div>
+    </nav>
+
+<div class="image-container">
+    <div class="image">
+        <a href="次要劇情.html">
+            <img src="封面\The Night Travels Traveller.jpg" alt="Image 1">
+            <p style="color: white; font-weight: bold;">《大森淋淋》外傳。本書時間發點生於《大森淋淋》後段，本書雖為外傳，但在某種定義上本書毫無疑問可以封為本傳!「木谷騰又」因家庭壞事而自居的高一新生，在開學第一天前往百合海岸散散心時遇見了神祕白衣連身裙少女，自稱名為「長島千花」的少女，相遇後兩人一同經歷了許多喜怒哀樂。書的末尾，少年遇見了林家少年，開起了最終章。</p>
+        </a>
+    </div>
+
+    <div class="image">
+        <a href="次要劇情.html">
+            <img src="封面\鋼琴少女的旋律：青春時刻.jpg" alt="Image 2">
+            <p style="color: white; font-weight: bold;">本書為《液遊略記》外傳。本篇主角林威鑰在進入了高中西洋樂社後，與原本為情侶的劉佳妮學姊和羽道成鳴學長形成了神奇的三角戀關係，與以往作品不同的就是以上所提的三角關係，三人在感情方面的極限拉扯使情勢緊張，但當三同時於舞台上表演卻是那般和諧，最終三人得結局更是讓人出乎意料?!以及於本書裡也有暗藏許多與前幾本書相關之內容。</p>
+        </a>
+    </div>
+
+    <div class="image">
+        <a href="次要劇情.html">
+            <img src="封面\叮鈴鈴鈴聲.jpg" alt="Image 3">
+            <p style="color: white; font-weight: bold;">本書為《大森淋淋》外傳，同為《液遊略記》前傳。本書故事主要圍繞在《液遊略記》主角木谷騰又父母木谷創與伊藤鴻沐夏大學時期的愛戀故事。本書還寫出了《大森淋淋》林家裡只有林慕羽見過的前情人羽道園子(本書時兩人還為情侶)。主要內容為園子及其男友慕羽精心規劃一場旅遊讓和園子為好友的沐夏的青梅竹馬創，成為情侶。雖然兩人是極好的朋友，但也因如此兩人要互相成為伴侶顯得更加困難許多。書裡也有暗藏許多與前幾本書相關之內容。</p>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

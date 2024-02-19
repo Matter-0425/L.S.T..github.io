@@ -20,6 +20,8 @@
         height: 100%;
         object-fit: cover;
         z-index: -1;
+
+        transition: transform 0.5s ease-in-out; /* Add transition for smooth scaling */
       }
 
       #content {
@@ -150,12 +152,14 @@
         border-radius: 15px; /* 添加圆角 */
       }
 
-      .text-content {  
-
+      .text-content {
+        max-height: 90vh; /* Adjust the max height based on your design */
+        overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
         text-align: left;
         margin-top: 0px; /* Adjust as needed for spacing */
         font-family: 'Montserrat', sans-serif;
       }
+
       h4 {
         font-family: 'Lora', serif;
         margin-top: 5px;
@@ -163,7 +167,6 @@
         font-weight: bold;
         font-family: "Lora", serif;
         padding: 30px;
-
       }
       
       .text-content h1 {
@@ -172,35 +175,69 @@
         border-top-right-radius:4.5% 45%; /* 將圓弧效果添加到 h1 元素 */
       }
       
+
+      @media only screen and (min-width: 601px) and (max-width: 1200px) {
+        #content h2 {
+          font-size: 30px;
+        }
+        #content h3 {
+          font-size: 12px;
+        }
+        #content img {
+          width: 250px;
+          height: auto;
+        }
+
+        h4 {
+          font-family: 'Lora', serif;
+          margin-top: 5px;
+          font-size: 15px;
+          font-weight: bold;
+          font-family: "Lora", serif;
+          padding: 30px;
+        }
+
+        .top-images,
+        .bottom-images {
+          display: flex;
+          justify-content: center;
+          margin: 5px; /* Adjust as needed for spacing */
+          width: 100px;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        #content h2 {
+          font-size: 30px;
+        }
+        #content h3 {
+          font-size: 12px;
+        }
+        #content img {
+          width: 180px;
+          height: auto;
+        }
+
+        h4 {
+          font-family: 'Lora', serif;
+          margin-top: 5px;
+          font-size: 15px;
+          font-weight: bold;
+          font-family: "Lora", serif;
+          padding: 30px;
+        }
+
+        .top-images,
+        .bottom-images {
+          display: flex;
+          justify-content: center;
+          margin: 2px; /* Adjust as needed for spacing */
+          width: 80px;
+        }
+      }
+
     </style>
 
-<div id="background-section">
-  <div class="center-container">
-    <div class="image-grid">
-      <div class="top-images">
-        <img src="image1.jpg" alt="Image 1" />
-        <img src="image2.jpg" alt="Image 2" />
-      </div>
-      <div class="bottom-images">
-        <img src="AAA\作者 (3).jpg" alt="Image 4" />
-        <img src="AAA\作者 (4).jpg" alt="Image 5" />
-      </div>
-      <div class="bottom-images">
-        <img src="AAA\作者 (5).jpg" alt="Image 4" />
-        <img src="AAA\作者(6).webp" alt="Image 5" />
-      </div>
-    </div>
-
-    <div class="text-content">
-      <h1>Webpage Introduction</h1>
-      <p>
-        This is a description of your webpage. You can provide information,
-        details, or any content you want to showcase here.
-      </p>
-    </div>
-  </div>
-</div>
-    </style>
   </head>
   <body>
     <nav class="custom-nav">
@@ -274,7 +311,7 @@
           </h4>
         </div>
       </div>
-    </div>
+      </div>
     <script>
         let isScrolling = false;
         let startTime;

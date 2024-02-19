@@ -82,6 +82,63 @@
             font-size: 40px;
         }
 
+        @media screen and  (min-width: 901px) and (max-width: 1800px) {
+            .image-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .image-container a {
+                flex: 1 0 250px; /* This means the items will flex to fill the space, but not go smaller than 200px */
+                margin: 5px;
+                text-align: center;
+            }
+
+            .image-container img {
+                max-width: 200px; /* This will make the image shrink if the container is too small */
+                height: auto; /* This will maintain the aspect ratio of the image */
+                margin: 0px;
+            }
+
+            h2 {
+                font-size:125% ;        
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .image-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .image-container a {
+                flex: 1 0 200px; /* This means the items will flex to fill the space, but not go smaller than 200px */
+                text-align: center;
+            }
+
+            .image-container img {
+                max-width: 6pc; /* This will make the image shrink if the container is too small */
+                height: auto; /* This will maintain the aspect ratio of the image */
+                margin: 0px;
+            }
+
+            .book-group {          
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .book-group img{          
+                margin-left: 150px;
+            }
+
+            h2 {
+                font-size:100% ;        
+            }
+        }
     </style>
 
 </head>
@@ -163,12 +220,8 @@
         <div class="book-description">
             <h1>大森林淋</h1><p><sup>主傳</sup></p>
             <p>伊藤鴻家族後代，伊藤鴻成愛與小林政澤婚。</p>
-
             <p>婚後政澤因為工作必要而攜眷來臺，在此地兩人生下另外兩位子女，林豪與林奈。干年後，政澤創業逼近慘敗，林家困囧，轉折在成年的林豪與江蘇寒婚後重啟林家家業，不被看好的他居然一個又一個大成功。林豪卒於46歲，死後林家65%股份於兒靖哲門下，接家後三年內與四位女性結婚。靖哲持續成功，兒慕羽成年後當任重官且書文成就極高，不久與另四位女性其中一人生下兒林勰翀，在勰翀的查詢媽媽可能人選時，發現竟有自己的姑姑？同時思岑的配偶家丞在無意間發現有人在寫給伴侶曖昧信件，便開使調查，結果出後，羽中未坦出。事後思、羽東北分，他們各自的孩子，林明娜娜與良緣生下高嫚紜，林明可壘與外 地伴侶在一起，林羽中與宋氏在一起。</p>
-                
             <p>最後末尾，林靖哲收到大祖先伊藤鴻永人的信， 信註他老人家要團集所有現在擁有伊藤鴻血脈的人 ，為了於多姆提河畔進行解咒儀式，所以需請林家人來一同參與。</p>
-                
-                </p>
             <!-- 書的大綱介紹文字 -->
         </div>
     </div>

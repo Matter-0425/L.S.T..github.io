@@ -26,7 +26,7 @@
             padding: 10px;
         }
 
-                img {
+        img {
             border-radius: 15px; /* Adjust the radius as needed */
         }
         .image {
@@ -64,6 +64,12 @@
             word-wrap: break-word; /* 當文字內容超過一定字數時換行 */
         }
 
+        @media screen and (max-width: 1000px) {
+        .image-container {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
     </style>
 
 </head>

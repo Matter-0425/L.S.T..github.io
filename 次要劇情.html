@@ -84,6 +84,63 @@
             font-size: 40px;
         }
 
+        @media screen and  (min-width: 1001px) and (max-width: 1800px) {
+            .image-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .image-container a {
+                flex: 1 0 250px; /* This means the items will flex to fill the space, but not go smaller than 200px */
+                margin: 5px;
+                text-align: center;
+            }
+
+            .image-container img {
+                max-width: 200px; /* This will make the image shrink if the container is too small */
+                height: auto; /* This will maintain the aspect ratio of the image */
+                margin: 0px;
+            }
+
+            h2 {
+                font-size:125% ;        
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .image-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .image-container a {
+                flex: 1 0 200px; /* This means the items will flex to fill the space, but not go smaller than 200px */
+                text-align: center;
+            }
+
+            .image-container img {
+                max-width: 10pc; /* This will make the image shrink if the container is too small */
+                height: auto; /* This will maintain the aspect ratio of the image */
+                margin: 0px;
+            }
+
+            .book-group {          
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .book-group img{          
+                margin-left: 150px;
+            }
+
+            h2 {
+                font-size:100% ;        
+            }
+        }
     </style>
 
 </head>

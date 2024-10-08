@@ -249,5 +249,21 @@
     </div>
 </div>
 
+</script>
+
+<div id="mask"></div>
+<div id="loader">
+    <img src="AAA\icom.ico" alt="Loading">
+    <p>Loading...</p>
+</div>
+<script>
+  // Ensure the loader is displayed for at least 1 second
+  window.addEventListener('load', () => {
+      setTimeout(() => {
+          document.body.classList.add('loaded');
+      }, 1000); // 1000 milliseconds = 1 second
+  });
+</script>
+
 </body>
 </html>
